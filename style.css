@@ -1,0 +1,225 @@
+
+/* ==========================================
+   GENERAL WEBSITE STYLING
+   These settings apply to the entire website.
+   ========================================== */
+
+/* Makes element sizing easier to control */
+* {
+    box-sizing: border-box;
+}
+
+/* Controls the overall page appearance */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f3ef;
+    color: #333333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   HEADER
+   Controls the top banner on both pages.
+   ========================================== */
+
+header {
+    background-color: #344c43;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Adds spacing below the main heading */
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Styles the small description under the title */
+header p {
+    font-size: 16px;
+}
+
+
+/* ==========================================
+   NAVIGATION BAR
+   Controls the links between the two pages.
+   ========================================== */
+
+nav {
+    background-color: #263a33;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Controls the navigation links */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+/* Changes the link color when the mouse hovers over it */
+nav a:hover {
+    color: #d8c8a5;
+}
+
+
+/* ==========================================
+   MAIN CONTENT
+   Controls the area where page information appears.
+   ========================================== */
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Creates individual white content boxes */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+
+    /* Adds a small shadow around each section */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ==========================================
+   HEADINGS
+   Controls the appearance of titles and subtitles.
+   ========================================== */
+
+h2 {
+    color: #344c43;
+    border-bottom: 2px solid #d8c8a5;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #526c5d;
+}
+
+
+/* ==========================================
+   IMAGES
+   Controls the size and appearance of pictures.
+   ========================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* Controls the main profile picture */
+.profile-image {
+    width: 200px;
+}
+
+/* Controls the second picture */
+.interest-image {
+    width: 300px;
+}
+
+
+/* ==========================================
+   TABLES
+   Controls the table on the home page.
+   ========================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+/* Adds borders and spacing to table cells */
+th, td {
+    border: 1px solid #dddddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Gives the table heading row a background color */
+th {
+    background-color: #344c43;
+    color: white;
+}
+
+
+/* ==========================================
+   LINKS
+   Controls links outside the navigation bar.
+   ========================================== */
+
+main a {
+    color: #526c5d;
+}
+
+/* Adds an underline when hovering over links */
+main a:hover {
+    color: #263a33;
+}
+
+
+/* ==========================================
+   COURSE ARTICLES
+   Separates each course and project.
+   ========================================== */
+
+article {
+    background-color: #f4f3ef;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+
+/* ==========================================
+   FOOTER
+   Controls the bottom of both pages.
+   ========================================== */
+
+footer {
+    background-color: #344c43;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+
+/* ==========================================
+   MOBILE SCREEN SUPPORT
+   Adjusts the website for smaller screens.
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    /* Reduces the spacing around the main content */
+    main {
+        padding: 12px;
+    }
+
+    /* Makes navigation links fit smaller screens */
+    nav a {
+        margin: 8px;
+    }
+
+    /* Reduces section spacing on smaller screens */
+    section {
+        padding: 15px;
+    }
+
+    /* Allows wide tables to be viewed more easily */
+    table {
+        font-size: 14px;
+    }
+}
